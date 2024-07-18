@@ -8,4 +8,6 @@ import java.util.Optional;
 public interface ContactRepo extends JpaRepository<Contact, String> {
 
     Optional<Contact> findById(String id);
+    
+    void deleteById(String id);
 }
